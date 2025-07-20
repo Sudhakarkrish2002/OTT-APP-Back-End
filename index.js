@@ -20,6 +20,10 @@ const mockUsers = [
 ];
 
 // Login endpoint
+
+app.get("/",function(req,res){
+    res.send("✅ Server is running!")
+  })
 app.post('/api/login', async (req, res) => {
   try {
     const { email, password } = req.body;
